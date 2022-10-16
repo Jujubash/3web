@@ -1,0 +1,320 @@
+
+
+
+<!DOCTYPE html>
+<html lang="de">
+<meta charset="UTF-8">
+<style type="text/css" media="screen">
+/* TEST .class= {border: 5px solid blue;} */
+/* Background */
+	html {
+	margin:0px;padding:0px;height: 100%;width:100vw;
+	width:100vw;
+	background-image:url(../images/silver.gif);
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-attachment:fixed;}
+
+	body {
+	margin:0px;padding:0px;height: 100%;width:100vw;
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-attachment:fixed;}
+
+/* Buttons and menu section */
+
+	div ul{background:rgba(255,255,255);}
+	div ul button a, div a{color:#3E3E3E;text-decoration:none;font-size:x-small;}
+	.bttn{color:#FFFFFF;display:inline-block;}
+	.toptitel{background:rgba(255,255,255,0.65);color:#080706;}
+	.toplang{background:rgba(255,255,255,0.65);}
+
+/* Media screen size*/
+/* Screen MIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    @media screen and (min-width:250px) and (max-width:325px){
+.toptitel{position:absolute;top:10px;font-size:medium;}
+.toplang{position:absolute;width:26%;margin-left:70%;top:-2%;font-size:small;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-20px;}
+.bttn{position:relative;width:40%;margin:4px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
+
+/* Screen ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    @media screen and (min-width:326px) and (max-width:436px){
+.toptitel{position:absolute;top:10px;font-size:medium;}
+.toplang{position:absolute;width:21%;margin-left:75%;top:-1%;font-size:small;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-22px;}
+.bttn{position:relative;width:41%;margin:4px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
+
+/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width:437px) and (max-width:530px){
+.toptitel{position:absolute;top:10px;font-size:medium;}
+.toplang{position:absolute;width:20%;margin-left:75%;top:-1%;font-size:small;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-28px;}
+.bttn{position:relative;width:42%;margin:4px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
+
+/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width:531px) and (max-width:600px){
+.toptitel{position:absolute;top:10px;font-size:medium;}
+.toplang{position:absolute;width:15%;margin-left:80%;top:-1%;font-size:small;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-28px;}
+.bttn{position:relative;width:43%;margin:4px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
+
+/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width:601px) and (max-width:676px){
+.toptitel{position:absolute;top:10px;font-size:medium;}
+.toplang{position:absolute;width:13%;height:200px;margin-left:80%;top:-1%;font-size:small;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-32px;}
+.bttn{position:relative;width:44%;margin:4px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
+
+/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width:677px) and (max-width:1100px){
+.toptitel{position:absolute;top:10px;font-size:large;}
+.toplang{position:absolute;width:11%;height:263px;margin-left:85%;top:-1%;font-size:medium;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-28px;}
+.bttn{position:relative;width:45%;margin:5px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
+
+/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width:1101px) and (max-width:1500px){
+.toptitel{position:absolute;top:10px;font-size:xx-large;}
+.toplang{position:absolute;width:10%;height:400px;margin-left:85%;top:-1%;font-size:large;}
+.toplang a{font-size:15px;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-28px;}
+.bttn{position:relative;width:47%;margin:9px;}
+.bttn a{font-size:17px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:20px;float:left;width:20%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:25px;font-size:x-large;}}
+
+/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width:1501px) and max (max-width:1780px;){
+.toptitel{position:absolute;top:10px;font-size:x-large;}
+.toplang{position:absolute;width:10%;height:450px;margin-left:85%;top:-1%;font-size:large;}
+.toplang a{font-size:15px;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-28px;}
+.bttn{position:relative;width:47%;margin:9px;}
+.bttn a{font-size:17px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:25px;font-size:large;}}
+
+/*ScreenMAX~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media screen and (min-width:1781px){
+.toptitel{position:absolute;top:10px;font-size:x-large;}
+.toplang{position:absolute;width:10%;margin-left:85%;top:-1%;font-size:large;}
+.toplang a{font-size:15px;}
+.topfoto{position:relative;width:100vw;}
+div{position:relative;width:100vw;top:-28px;}
+.bttn{position:relative;width:47%;margin:9px;}
+.bttn a{font-size:17px;}
+.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
+.localfoto{position:relative;top:40px;width:50%;}
+.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:25px;font-size:large;}}
+
+
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content{display:none;text-decoration:none;}.tab-folder > :last-child, .tab-folder > .tab-content:target{display:block;}
+</style>
+
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></head>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<body>
+  <img class="topfoto" src="../images/locationmain.gif">
+  <div class="toptitel">&ensp;Advocacia Silva & Soares&ensp;</div>
+
+<!-- Sprachen ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="toplang"><br>&ensp;Idioma:&ensp;
+  <br><a href=./pt_index.html>&ensp;&emsp;• Português</a>
+  <br><a href=./en_index.html>&ensp;&emsp;• English</a>
+  <br><a href=./de_index.html>&ensp;&emsp;• Deutsch</a>
+</div> 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="menuselect"><ul id="menu">
+          <button class="bttn"><a href="../index.html">Homepage</a></button>
+          <button class="bttn"><a href="#gebiete">Advocate services</a></button>
+          <button class="bttn"><a href="#lebenslauf">Curriculum Vitae</a></button>
+          <button class="bttn"><a href="#termine">Schedule</a></button>
+          <button class="bttn"><a href="#datenschutz">Privacy Policy</a></button>
+       	  <button class="bttn"><a href="#impressum">Imprint</a></button>
+</ul></div><div class="tab-folder">
+
+<!-- Lebenslauf // Vitae ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="lebenslauf" class="tab-content">
+  <div class="hauptinfo">
+    <img src="../images/fotoE.gif" class="hauptfoto">
+	<h3> Silva & Soares, Advocacia </h3>
+      <br> Member, UIA, International Association of Lawyers
+      <br> Member, OAB SP, Ordem dos Advogados do Brasil
+      <br> Member, Gründer und Selbständigen Deutschland (VGSD) e.V. <br> 
+    	<br> Areas of practice in Brazilian Law:
+    	<br> Civil Law / Civil Procedural Law / Family Law / International Law
+    	<br> Languages:
+	    <br> Portuguese, German and English
+      <br><br><br>
+  </div>
+</div>
+
+<!-- Termine // Agendar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="termine" class="tab-content">
+  <div class="hauptinfo">
+      <h4>Consultation schedule:</h4>
+      <br> Consultations only with previously scheduled time.
+      <br> Mon - Fri: 09:00 Uhr - 12:00 Uhr
+      <h4> Consultations with appointment only. </h4>
+           Advocacia Silva & Soares <br>
+      <br> Stresemannstraße, 123 C
+      <br> 10963, Berlin, Deutschland
+      <br> +49 1794100771
+      <br> E-Mail: info[et]advocacia-soares.com <br>  
+      <br> Avenida Paulista, 1374
+      <br> Bela Vista, São Paulo, SP
+      <br> CEP: 01310-100
+      <br> +55 19 983670523
+      <br> E-Mail: info[et]advocacia-soares.com
+      <center><img src="../images/location3.gif" class="localfoto"></center>
+    <br><br><br>
+</div>
+</div>
+
+<!-- Datenschutz // Privacidade ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="datenschutz" class="tab-content">
+  <div class="hauptinfo">
+	<h3> Your rights as a data subject </h3>
+        <br> You can exercise the following rights at any time by contacting our data protection officer:
+        <br> &#9900;Information about your data stored with us and their processing (Art. 15 DSGVO),
+        <br> &#9900;Correction of incorrect personal data (Art. 16 DSGVO),
+        <br> &#9900;Deletion of your data stored with us (Art. 17 DSGVO),
+        <br> &#9900;Restriction of data processing, provided that we are not yet allowed to delete your data due to legal obligations (Art. 18 DSGVO),
+        <br> &#9900;Opposition to the processing of your data by us (Art. 21 DSGVO) and
+        <br> &#9900;Data transferability, provided that you have consented to the data processing or have concluded a contract with us (Art. 20 DSGVO)
+        <br> If you have given us your consent, you can revoke it at any time with effect for the future.
+        <br> You may at any time submit a complaint to a supervisory authority, e.g. to the competent supervisory authority of the federal state of your residence or to the authority responsible for us as the responsible body.
+        <br> A list of the supervisory authorities (for the non-public sector) with their addresses can be found at <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank" rel="nofollow noopener">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.
+        <h3> Collection of general information when visiting our website</h3>.
+        <h4> Type and purpose of processing: </h4>
+        <br> When you access our website, i.e. when you do not register or otherwise submit information, information of a general nature is automatically collected. This information (server log files) includes, for example, the type of web browser, the operating system used, the domain name of your Internet service provider, your IP address and similar.
+        <br> They are processed in particular for the following purposes:
+        <br> &#9900;Ensuring a problem-free connection of the website,
+        <br> &#9900;Ensuring a smooth use of our website,
+        <br> &#9900;Evaluation of system security and stability as well as
+        <br> &#9900;for other administrative purposes.
+	    <br> We do not use your data to draw conclusions about your person. Information of this kind will be statistically evaluated by us, if necessary, in order to optimize our Internet presence and the technology behind it.
+        <h4> Legal basis: </h4>
+        <br> The processing is carried out in accordance with Art. 6 Para. 1 letter f DSGVO on the basis of our justified interest in improving the stability and functionality of our website.
+        <h4> Receiver: </h4>
+        <br> Recipients of the data may be technical service providers who act as contract processors for the operation and maintenance of our website.
+        <h4> Storage duration: </h4>
+        <br> The data will be deleted as soon as they are no longer required for the purpose of the collection. This is generally the case for the data used to provide the website, when the respective session has ended.
+        <h4> Provision prescribed or required: </h4>
+        <br> The provision of the aforementioned personal data is not required by law or contract. Without the IP address, however, the service and functionality of our website cannot be guaranteed. In addition, individual services may not be available or may be restricted. For this reason an objection is excluded.
+        <h3> Provision of chargeable services </h3>
+        <h4> Type and purpose of processing: </h4>
+        <br> In order to provide services with costs, we will ask for additional data, e.g. payment details, in order to be able to execute your order.
+        <h4> Legal basis: </h4>
+        <br> The processing of the data required for the conclusion of the contract is based on Art. 6 para. 1 lit. b DSGVO.
+        <h4> Receiver: </h4>
+        <br> Recipients of the data may be order processors.
+        <h4> Storage duration:
+        <br> We store this data in our systems until the legal retention periods have expired. These are generally 6 or 10 years for reasons of proper accounting and tax law requirements.
+        <h4> Provision prescribed or required: </h4>
+        <br> The provision of your personal data is voluntary. Without the provision of your personal data we cannot grant you access to our offered contents and services.
+	    <h3> Contact request </h3>
+        <h4> Type and purpose of processing: </h4>
+        <br> The data entered by you will be stored for the purpose of individual communication with you. For this purpose, it is necessary to provide a valid e-mail address and your name. This serves to assign the inquiry and to answer it afterwards. The specification of further data is optional.
+        <h4> Legal basis: </h4>
+        <br> The processing of the data entered in the contact form is based on a legitimate interest (Art. 6 para. 1 lit. f DSGVO).
+        <br> By providing the contact form, we would like to make it easy for you to contact us. The information you provide will be stored for the purpose of processing your inquiry and for possible follow-up questions.
+        <br> If you contact us to request an offer, the data entered in the contact form will be processed for the purpose of carrying out pre-contractual measures (Art. 6 Para. 1 lit. b DSGVO).
+        <h4> Recipient: </h4>
+        <br> Recipients of the data may be order processors.
+        <h4> Storage duration: </h4>
+        <br> Data will be deleted at the latest 6 months after processing the request.
+        <br> If there is a contractual relationship, we are subject to the legal retention periods according to HGB and delete your data after these periods have expired.
+        <h4> Provision prescribed or required: </h4>
+        <br> The provision of your personal data is voluntary. However, we can only process your request if you provide us with your name, your e-mail address and the reason for the request.
+        <h3> Change of our data protection regulations </h3>
+        <br> We reserve the right to adapt this data protection declaration so that it always meets the current legal requirements or to implement changes to our services in the data protection declaration, e.g. when introducing new services. The new data protection declaration then applies to your renewed visit.
+        <h3> Questions to the data protection officer </h3>
+        <br> If you have any questions regarding data protection, please write us an e-mail or contact the person responsible for data protection in our organization directly:
+        <br> https://www.advocacia-soares.com/datenschutz
+      <br><br><br>
+  </div>
+</div>
+
+<!-- Impressum // Impresso ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="impressum" class="tab-content">
+  <div class="hauptinfo"><br>
+	<h4> Imprint </h4>
+        <h4> Information according to § 5 TMG: </h4>
+        <br> Advocacia Silva & Soares
+        <h4> Postal address: </h4>
+        <br> Avenida Paulista, 1374
+        <br> Bela Vista, São Paulo, SP
+        <br> CEP: 01310-100
+        <h4> Contact: </h4>
+        <br> E-mail: info[at]advocacia-soares.com
+        <h4> Professional legal information </h4>
+        <h4> Responsible Chamber: </h4>
+        <br> Ordem dos Advogados do Brasil, Seccional São Paulo 
+        <h4> Professional regulations: </h4>
+        <br> https://www.oabsp.org.br/
+        <h4> The professional liability insurance was taken out with: </h4>
+        <br> Allianz Insurance Company
+        <br> 10900, Berlin
+        <h4> Notes on the website </h4>
+        <h4> Information according to § 36 VSBG </h4>
+        <br> According to § 36 VSBG (Consumer Dispute Settlement Act - Act on
+        <br> the alternative dispute resolution in consumer matters), the
+        <br> operator of this website:
+        <br> We are neither willing nor obliged to participate in any dispute resolution procedures
+        <br> to participate in front of a consumer arbitration board.
+      <br><br><br>
+  </div>
+</div>
+
+<!-- Dienstleistungen // Serviços advocatícios ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="gebiete" class="tab-content">
+  <div class="hauptinfo"><br>
+        <h4> General civil claims and their enforcement before arbitral tribunals or ordinary courts. </h4>
+        <br> If you have conflicts with business partners, we will inform you of your rights, if necessary we will contact the other party and/or your attorney in order to assert your interests.
+        <br> In legal proceedings, we are specialists in Brazilian law, working together with German law specialists when necessary. We communicate with all parties and their representatives in the appropriate language.
+        <h4> Family law </h4>
+        <br> Legal problems usually arise in connection with a separation, divorce or dissolution of civil partnership.
+        <br> We have found the best solution for everyone involved.
+        <h4> Land acquisition or rights </h4>
+        <br> In the case of real estate projects, we draw up or examine purchase contracts as well as loan contracts for external financing, we accompany you in the appointment of the notary and ensure that all necessary applications are made.
+        <br> We support lenders in the application of their claims and develop security concepts to protect these claims.
+        <br> Whatever your case, we will advise you competently and represent your interests.
+      <br><br><br>
+  </div>
+</div>
+</body>
+<!-- Thanks to krispy from StackOverflow for your indirect help with the code!
+https://stackoverflow.com/questions/6906724/is-it-possible-to-have-tabs-without-javascript#20104746
+-->
+
+</html>
