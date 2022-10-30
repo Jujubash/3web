@@ -4,155 +4,57 @@
 <!DOCTYPE html>
 <html lang="de">
 <meta charset="UTF-8">
-<style type="text/css" media="screen">
-/* TEST .class= {border: 5px solid blue;} */
-/* Background */
-	html {
-	margin:0px;padding:0px;height: 100%;width:100vw;
-	width:100vw;
-  }
 
-	body {
-	margin:0px;padding:0px;height: 100%;width:100vw;
-	}
-
-/* Buttons and menu section */
-
-	div ul{background:rgba(255,255,255);}
-	div ul button a, div a{color:#3E3E3E;text-decoration:none;font-size:x-small;}
-	.bttn{color:#FFFFFF;display:inline-block;}
-	.toptitel{background:rgba(255,255,255,0.65);color:#080706;}
-	.toplang{background:rgba(255,255,255,0.65);}
-
-/* Media screen size*/
-/* Screen MIN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-    @media screen and (min-width:250px) and (max-width:325px){
-.toptitel{position:absolute;top:10px;font-size:medium;}
-.toplang{position:absolute;width:26%;margin-left:70%;top:-2%;font-size:small;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-20px;}
-.bttn{position:relative;width:40%;margin:4px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
-
-/* Screen ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-    @media screen and (min-width:326px) and (max-width:436px){
-.toptitel{position:absolute;top:10px;font-size:medium;}
-.toplang{position:absolute;width:21%;margin-left:75%;top:-1%;font-size:small;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-22px;}
-.bttn{position:relative;width:41%;margin:4px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
-
-/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width:437px) and (max-width:530px){
-.toptitel{position:absolute;top:10px;font-size:medium;}
-.toplang{position:absolute;width:20%;margin-left:75%;top:-1%;font-size:small;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-28px;}
-.bttn{position:relative;width:42%;margin:4px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
-
-/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width:531px) and (max-width:600px){
-.toptitel{position:absolute;top:10px;font-size:medium;}
-.toplang{position:absolute;width:15%;margin-left:80%;top:-1%;font-size:small;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-28px;}
-.bttn{position:relative;width:43%;margin:4px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
-
-/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width:601px) and (max-width:676px){
-.toptitel{position:absolute;top:10px;font-size:medium;}
-.toplang{position:absolute;width:13%;height:200px;margin-left:80%;top:-1%;font-size:small;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-32px;}
-.bttn{position:relative;width:44%;margin:4px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
-
-/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width:677px) and (max-width:1100px){
-.toptitel{position:absolute;top:10px;font-size:large;}
-.toplang{position:absolute;width:11%;height:263px;margin-left:85%;top:-1%;font-size:medium;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-28px;}
-.bttn{position:relative;width:45%;margin:5px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:17px;font-size:medium;}}
-
-/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width:1101px) and (max-width:1500px){
-.toptitel{position:absolute;top:10px;font-size:xx-large;}
-.toplang{position:absolute;width:10%;height:400px;margin-left:85%;top:-1%;font-size:large;}
-.toplang a{font-size:15px;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-28px;}
-.bttn{position:relative;width:47%;margin:9px;}
-.bttn a{font-size:17px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:20px;float:left;width:20%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:25px;font-size:x-large;}}
-
-/*Screen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width:1501px) and (max-width:1780px){
-.toptitel{position:absolute;top:10px;font-size:x-large;}
-.toplang{position:absolute;width:10%;height:450px;margin-left:85%;top:-1%;font-size:large;}
-.toplang a{font-size:15px;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-28px;}
-.bttn{position:relative;width:47%;margin:9px;}
-.bttn a{font-size:17px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:25px;font-size:large;}}
-
-/*ScreenMAX~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-@media screen and (min-width:1781px){
-.toptitel{position:absolute;top:10px;font-size:x-large;}
-.toplang{position:absolute;width:10%;margin-left:85%;top:-1%;font-size:large;}
-.toplang a{font-size:15px;}
-.topfoto{position:relative;width:100vw;}
-div{position:relative;width:100vw;top:-28px;}
-.bttn{position:relative;width:47%;margin:9px;}
-.bttn a{font-size:17px;}
-.hauptfoto{position:relative;border-radius:55%;shape-outside:circle();margin:8px;float:left;width:30%;}
-.localfoto{position:relative;top:40px;width:50%;}
-.hauptinfo{top:25px;float:left;width:93%;margin-left:5%;line-height:25px;font-size:large;}}
-
-
-.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content{display:none;text-decoration:none;}.tab-folder > :last-child, .tab-folder > .tab-content:target{display:block;}
-</style>
-
-<head><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"></head>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<head>
+     <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<!-- Titel ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <body>
   <img class="topfoto" src="../images/locationmain.gif">
   <div class="toptitel">&ensp;<!--KEY_VALUE-->Advocacia Nobilis & Meritum&ensp;</div>
-<!-- Sprachen ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<div class="toplang"><br>&ensp;Sprache:&ensp;
-  <br><a href=./pt.html>&ensp;&emsp;• Português</a>
-  <br><a href=./en.html>&ensp;&emsp;• English</a>
-  <br><a href=./de.html>&ensp;&emsp;• Deutsch</a>
-</div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- Hauptmenu ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div class="menuselect"><ul id="menu">
-    <button class="bttn"><a href="../index.html">Hauptseite</a></button>
-    <button class="bttn"><a href="#gebiete">Dienstleistungen</a></button>
-    <button class="bttn"><a href="#lebenslauf">Lebenslauf</a></button>
-    <button class="bttn"><a href="#termine">Termin buchen</a></button>
-    <button class="bttn"><a href="#datenschutz">Datenschutz</a></button>
-    <button class="bttn"><a href="#impressum">Impressum</a></button>
+</ul><div class="wrap"><span class="decor"></span><nav><ul class="primary">
+     <li>
+          <a href="../index.html">Hauptseite</a>
+     </li>
+     <li>
+          <a href="#gebiete">Dienstleistungen</a>
+          <ul class="sub">
+               <li><a href="#gebiete">Gesellschaftsrecht - Akquisitionen und Fusionen</a></li>
+               <li><a href="#gebiete">Familienrecht und Erbfolge</a></li>
+               <li><a href="#gebiete">Zivilrecht, Internationales Recht und Handelsrecht</a></li>
+               <li><a href="#gebiete">Investitionen</a></li>
+               <li><a href="#gebiete">Rogatory-Briefe</a></li>
+               <li><a href="#gebiete">Steuerrecht</a></li>
+               <li><a href="#gebiete">Arbeitsrecht</a></li>
+               <li><a href="#gebiete">Ausländerrecht</a></li>
+               <li><a href="#gebiete">Immobilienrecht</a></li>
+          </ul>
+     </li>
+     <li>
+          <a href="#lebenslauf">Lebenslauf</a>
+     </li>
+     <li>
+          <a href="#termine">Termin buchen</a>
+     </li>
+     <li>
+          <a href="#datenschutz">&#x1F512</a> <!-- Lock -->
+          <ul class="sub">
+               <li><a href="#datenschutz">Datenschutz</a></li>
+               <li><a href="#impressum">Impressum</a></li>
+          </ul>  
+     </li>
+     <li>
+          <a href="">&#x1F310</a> <!-- Globe -->
+          <ul class="sub">
+               <li><a href="./pt.html">Português</a></li>
+               <li><a href="./en.html">English</a></li>
+               <li><a href="./de.html">Deutsch</a></li>
+          </ul>  
+     </li>
+</ul></nav></div>
 </ul></div><div class="tab-folder">
 
 <!-- Lebenslauf // Vitae ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -161,9 +63,7 @@ div{position:relative;width:100vw;top:-28px;}
     <h3> <!--KEY_VALUE--> Nobilis & Meritum, Advocacia </h3>
          Mitglied, UIA, International Association of Lawyers
     <br> Mitglied, OAB SP, Ordem dos Advogados do Brasil
-    <br> Mitglied, Gründer und Selbständigen Deutschland (VGSD) e.V. <br> 
-    <br> Tätigkeitsbereiche im brasilianischen Recht:
-    <br> Zivilrecht / Zivilprozessrecht / Familienrecht / Internationales Recht<br>
+    <br> Mitglied, Gründer und Selbständigen Deutschland (VGSD) e.V. <br>
     <br> Sprachen:
     <br> Portugiesisch, Deutsch und Englisch
     <br><br>
@@ -297,6 +197,17 @@ div{position:relative;width:100vw;top:-28px;}
 </div>
 
 <!-- Dienstleistungen // Serviços advocatícios ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+     Gesellschaftsrecht - Akquisitionen und Fusionen
+     Familienrecht und Erbfolge
+     Zivilrecht, Internationales Recht und Handelsrecht
+     Investitionen
+     Rogatory-Briefe
+     Steuerrecht
+     Arbeitsrecht
+     Ausländerrecht
+     Immobilienrecht
+-->
 <div id="gebiete" class="tab-content">
   <div class="hauptinfo"><br>
      <b>Praxisbereiche:</b><br><br>
@@ -328,7 +239,7 @@ div{position:relative;width:100vw;top:-28px;}
           <br><br> Nachfolgeplanung; persönlich und geschäftlich
           <br><br> Testamente
           <br><br> Vorräte
-     <br><br><b>  Zivilrecht, Internationales Recht und Handelsrecht: </b>
+     <br><br><b> Zivilrecht, Internationales Recht und Handelsrecht: </b>
           <br><br> Kauf- und Verkaufsverträge
           <br><br> Liefervertrag
           <br><br> Distributionsvertrag
